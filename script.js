@@ -16,9 +16,47 @@ const goodbyeMessage = [
     ['You are learning to code, rest and take a break, but never quit!']
 ];
 
+const biggestArray = (greeting, middle, goodbye) => {
+    let maxValue = 0;
+    if(greeting.length > middle.length) {
+        maxValue = greeting.length;
+    }
+    else {
+        maxValue = middle.length;
+    }
+    if(goodbye.length > maxValue) {
+        maxValue = goodbye.length;
+    }
+    return maxValue;
+}
+
+const len = biggestArray(greetingMessage, middleMessage, goodbyeMessage);
+const random = () => Math.floor(Math.random() * len);
+
 const finalMessage = [];
 
-const randomGreeting = greeting => {
+const randomPhrase = phrase => {
+    switch(random()) {
+        case 0:
+            finalMessage.push(phrase[0]);
+            break;
+        case 1: 
+            finalMessage.push(phrase[1]);
+            break;
+        case 2:
+            finalMessage.push(phrase[2]);
+            break;
+    }
+    return finalMessage;
+}
+
+randomPhrase(greetingMessage);
+randomPhrase(middleMessage);
+randomPhrase(goodbyeMessage);
+
+console.log(finalMessage.join(''));
+
+/*const randomGreeting = greeting => {
     const random = Math.floor(Math.random() * 3);
     switch(random) {
         case 0:
@@ -70,4 +108,4 @@ randomGreeting(greetingMessage);
 randomMiddle(middleMessage);
 randomGoodbye(goodbyeMessage)
 
-console.log(finalMessage.join(' '));
+console.log(finalMessage.join(' '));*/
