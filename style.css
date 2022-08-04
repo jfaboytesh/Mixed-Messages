@@ -1,0 +1,59 @@
+body {
+    background-color: #37425B;
+    background-image: url(./resources/images/galaxy-image.jpg);
+    background-size: 15%;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+#title {
+    font-size: 3rem;
+    color: #c874b2;
+    margin: 0px auto;
+}
+
+#author {
+    font-size: 1.5rem;
+    color: #ced7e0;
+}
+
+.quotes {
+    margin: 7rem 0;
+}
+
+.motivation {
+    font-size: 2.2rem;
+    font-family: 'Lobster';
+    text-align: center;
+    color:antiquewhite;
+    visibility: hidden;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0;
+    width: 100%;
+    height: 10rem;
+}
+
+#mquote {
+    display: inline-block;
+    width: 20rem;
+    height: 6rem;
+    border-radius: 100%;
+    background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+    opacity: 85%;
+    font-size: 1.5rem;
+    color: indigo;
+}
+
+#mquote:hover {
+    cursor: pointer;
+}
+
+#mquote:active {
+    box-shadow: 2px 2px 5px rgba(152, 152, 196, 0.473);
+    cursor: pointer;
+}

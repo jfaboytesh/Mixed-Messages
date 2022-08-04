@@ -54,7 +54,16 @@ randomPhrase(greetingMessage);
 randomPhrase(middleMessage);
 randomPhrase(goodbyeMessage);
 
-console.log(finalMessage.join(''));
+const phrases = finalMessage.join(' ');
+
+const motivationQuote = document.querySelector('.motivation');
+motivationQuote.innerHTML = phrases;
+
+const visible = () => {
+    motivationQuote.style.visibility = 'visible';
+}
+
+document.getElementById('mquote').addEventListener('click', visible);
 
 /*const randomGreeting = greeting => {
     const random = Math.floor(Math.random() * 3);
