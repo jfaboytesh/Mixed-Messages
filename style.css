@@ -9,7 +9,7 @@ body {
 
 .nav-bar {
   padding-bottom: .3rem;
-  background-color: #F28C0F;
+  background-color: #65647C;
   padding-top: .009rem;
 }
 
@@ -44,7 +44,7 @@ h1 {
   font-family: 'Zen Antique';
   font-weight: 700;
   font-size: 3rem;
-  color:#BF0F30;
+  color:#000000;
 }
 
 p {
@@ -102,38 +102,14 @@ p {
   color: #F2A30F;
 }
 
-#motivational-quotes button {
+#motivational-quotes .mquotes {
   font-family: 'Roboto Slab';
 }
 
 #motivational-quotes .motivation {
   visibility: hidden;
-  border: solid 1px red
-}
-
-/* Technologies Used */
-
-#technologies {
-  padding-bottom: 2rem;
-}
-
-#technologies p {
-  font-family: 'Roboto Slab';
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: left;
-  color: #000000;
-  margin-left: 3rem;
-}
-
-#technologies ul {
-  list-style-type: none;
-  margin-top: 2rem;
-}
-
-#technologies li {
-  display: inline;
-  margin: 12rem;
+  text-align: center;
+  border: solid 1px red;
 }
 
 /* Contact Section */
@@ -141,24 +117,33 @@ p {
 #contact {
   margin-top: 5rem;
   padding: 1.5rem 0;
-  background-color: #F23E16;
+  background-color: #C7BCA1;
 }
 
 #contact h3 {
   font-family: 'Roboto Slab';
   font-size: 1.6rem;
   margin: 0 3rem 2rem 3rem;
-  color: #FFFFFF;
-  font-weight: 400;
+  color: #000000;
+  font-weight: 800;
 }
 
-#contact ul {
+#contact .divider {
+  display: flex;
+}
+
+.social-media {
+  width: 60%;
+  border-right: solid 1px black;
+}
+
+.social-media ul {
  list-style-type: none;
  text-align: left;
  margin-bottom: 2rem;
 }
 
-#contact li {
+.social-media li {
   display: inline;
   margin: 3rem 6rem 1.5rem 6rem;
 }
@@ -171,21 +156,47 @@ p {
   color: #FFFFFF;
 }
 
-#contact p {
+.social-media p {
   font-family: 'Poppins';
   font-size: 1.10rem;
   font-weight: 200;
   text-align: left;
   margin-left: .9rem;
-  color: #D2D2D2;
+  color: #000000;
+  max-width: 70ch;
 }
 
-#contact span {
+.social-media span {
   display: block;
   font-family: 'Roboto Slab';
   font-size: 1rem;
   font-style: oblique;
-  text-align: right;
-  margin-right: 3.5rem;
-  color: #F2F2F2;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 2rem;
+  color: #000000;
 }
+
+/* Technologies Used */
+
+#technologies {
+  width: 40%;
+}
+
+#technologies p {
+  font-family: 'Roboto Slab';
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+}
+
+#technologies ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+
